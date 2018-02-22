@@ -1527,7 +1527,9 @@
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-
+	$('.js_tiles__item[data-color]').each(function() {
+	    $(this).css('borderColor', $(this).data('color'));
+	});
 });
 
 var el = document.getElementById('tiles');
